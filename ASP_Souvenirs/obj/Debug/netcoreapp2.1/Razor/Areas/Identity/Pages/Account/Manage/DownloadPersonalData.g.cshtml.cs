@@ -13,13 +13,18 @@ namespace ASP_Souvenirs.Areas.Identity.Pages.Account.Manage
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
-#line 3 "C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\Areas\Identity\Pages\_ViewImports.cshtml"
+#line 1 "C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\Areas\Identity\Pages\_ViewImports.cshtml"
 using Microsoft.AspNetCore.Identity;
 
 #line default
 #line hidden
 #line 2 "C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\Areas\Identity\Pages\_ViewImports.cshtml"
 using ASP_Souvenirs.Areas.Identity;
+
+#line default
+#line hidden
+#line 3 "C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\Areas\Identity\Pages\_ViewImports.cshtml"
+using ASP_Souvenirs.Models;
 
 #line default
 #line hidden
@@ -34,7 +39,7 @@ using ASP_Souvenirs.Areas.Identity.Pages.Account.Manage;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e3c13bd0255fd370ccd5c5aaf6bd29ffae443e28", @"/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"728514d76b7d5ce0750b91a44f2f6f8bf17e2cd6", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0ee25fd2ada7e5d4bf7a29501ae19781a4a12857", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"be652e6fcf457b3e0232bb4ea724bda5fe3e4f54", @"/Areas/Identity/Pages/Account/_ViewImports.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"33ea8875518d3a3f8058b51f43c9b45a2e070f8c", @"/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml")]
     public class Areas_Identity_Pages_Account_Manage_DownloadPersonalData : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
@@ -87,7 +92,7 @@ Write(ViewData["Title"]);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(219, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7548639722bb4f048f14bbd01751c07b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e455bebd638c4a2e8077b083b3a34671", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

@@ -34,18 +34,22 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
 
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a asp-area="" asp-controller="Souvenirs" asp-action="Index">Souvenir Management</a></li>
-                            <li><a asp-area="" asp-controller="Categories" asp-action="Index">Category Management</a></li>
-                            <li><a asp-area="" asp-controller="Suppliers" asp-action="Index">Supplier Management</a></li>
-                            <li><a asp-area="" asp-controller="Orders" asp-action="Index">Order Management</a></li>
-                            <li><a asp-area="" asp-controller="AdminApplicationUsers" asp-action="Index">Account Management</a></li>
-                        </ul>
-                    </li>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a asp-area="" asp-controller="Souvenirs" asp-action="Index">Souvenir Management</a></li>
+                                <li><a asp-area="" asp-controller="Categories" asp-action="Index">Category Management</a></li>
+                                <li><a asp-area="" asp-controller="Suppliers" asp-action="Index">Supplier Management</a></li>
+                                <li><a asp-area="" asp-controller="Orders" asp-action="Index">Order Management</a></li>
+                                <li><a asp-area="" asp-controller="AdminApplicationUsers" asp-action="Index">Account Management</a></li>
+                            </ul>
+                        </li>
+                    }
                 </ul>
-                <partial name="_LoginPartial" />
+                @*<partial name="_LoginPartial" />*@
+                @await Html.PartialAsync("_LoginPartial")
             </div>
         </div>
     </nav>

@@ -9,13 +9,11 @@ C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\ASP_So
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\ASP_Souvenirs.csproj.CoreCompileInputs.cache
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\ASP_Souvenirs.RazorAssemblyInfo.cache
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\ASP_Souvenirs.RazorAssemblyInfo.cs
-C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\ASP_Souvenirs.AssemblyInfoInputs.cache
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\ASP_Souvenirs.AssemblyInfo.cs
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\ASP_Souvenirs.TagHelpers.input.cache
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\ASP_Souvenirs.TagHelpers.output.cache
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\ASP_Souvenirs.RazorCoreGenerate.cache
-C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
@@ -48,6 +46,7 @@ C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Views\Categories\Details.g.cshtml.cs
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Views\Categories\Edit.g.cshtml.cs
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Views\Categories\Index.g.cshtml.cs
+C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AccessDenied.g.cshtml.cs
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ConfirmEmail.g.cshtml.cs
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ExternalLogin.g.cshtml.cs
@@ -81,3 +80,4 @@ C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Error.g.cshtml.cs
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs

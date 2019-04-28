@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
-using ASP_Souvenirs.Models;
 using Microsoft.AspNetCore.Authorization;
+using ASP_Souvenirs.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -55,6 +55,36 @@ namespace ASP_Souvenirs.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
+
+            [Required]
+            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+            [Display(Name = "Address")]
+            public string Address { get; set; }
+
+            [Required]
+            [DataType(DataType.PhoneNumber)]
+            [Display(Name = "Mobile Phone Number")]
+            public string MobilePhoneNumber { get; set; }
+
+            [DataType(DataType.PhoneNumber)]
+            [Display(Name = "Home Phone Number")]
+            public string HomePhoneNumber { get; set; }
+
+            [DataType(DataType.PhoneNumber)]
+            [Display(Name = "Work Phone Number")]
+            public string WorkPhoneNumber { get; set; }
+
+            [Required]
+            [StringLength(50, ErrorMessage = "First name cannot be longer than {1} characters.")]
+            [Display(Name = "Last Name")]
+            [RegularExpression(@"^[A-Z]+[a-zA-Z''-'\s]*$", ErrorMessage = "Please make sure your last name starts with a capital letter.")]
+            public string LastName { get; set; }
+
+            [Required]
+            [StringLength(50, ErrorMessage = "First name cannot be longer than {1} characters.")]
+            [Display(Name = "First Name")]
+            [RegularExpression(@"^[A-Z]+[a-zA-Z''-'\s]*$", ErrorMessage = "Please make sure your first name starts with a capital letter.")]
+            public string FirstName { get; set; }
         }
 
         public void OnGet(string returnUrl = null)
@@ -67,7 +97,19 @@ namespace ASP_Souvenirs.Areas.Identity.Pages.Account
             returnUrl = returnUrl ?? Url.Content("~/");
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email };
+                //var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email };
+
+                var user = new ApplicationUser
+                {
+                    UserName = Input.Email,
+                    Email = Input.Email,
+                    FirstName = Input.FirstName,
+                    LastName = Input.LastName,
+                    MobilePhoneNumber = Input.MobilePhoneNumber,
+                    HomePhoneNumber = Input.HomePhoneNumber,
+                    WorkPhoneNumber = Input.WorkPhoneNumber
+                };
+
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
