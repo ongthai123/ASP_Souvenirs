@@ -17,6 +17,7 @@ namespace ASP_Souvenirs.Areas.Identity.Pages.Account
     public class LoginModel : PageModel
     {
         private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly UserManager<ApplicationUser> _userManager;
         private readonly ILogger<LoginModel> _logger;
 
         public LoginModel(SignInManager<ApplicationUser> signInManager, ILogger<LoginModel> logger)
@@ -74,7 +75,27 @@ namespace ASP_Souvenirs.Areas.Identity.Pages.Account
             {
                 // This doesn't count login failures towards account lockout
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
+
+                //var user = await _userManager.GetUserAsync(User);
+                //var userEmail = await _userManager.FindByEmailAsync(user.Email);
+                //if(userEmail == null)
+                //{
+                //    if (user.Enabled == false)
+                //    {
+                //        ModelState.AddModelError(string.Empty, "Your Account is currently Disabled, please consult the Administrator.");
+                //        return Page();
+                //    }
+
+                //    if (!await _userManager.IsEmailConfirmedAsync(user))
+                //    {
+                //        ModelState.AddModelError(string.Empty,
+                //                      "You must have a confirmed email to log in.");
+                //        return Page();
+                //    }
+                //}
+
                 var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: true);
+                
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");

@@ -5,7 +5,6 @@ C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\bin\Debug\netcoreapp2.1\ASP_So
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\bin\Debug\netcoreapp2.1\ASP_Souvenirs.pdb
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\bin\Debug\netcoreapp2.1\ASP_Souvenirs.Views.dll
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\bin\Debug\netcoreapp2.1\ASP_Souvenirs.Views.pdb
-C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\ASP_Souvenirs.csprojAssemblyReference.cache
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\ASP_Souvenirs.csproj.CoreCompileInputs.cache
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\ASP_Souvenirs.RazorAssemblyInfo.cache
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\ASP_Souvenirs.RazorAssemblyInfo.cs
@@ -81,3 +80,11 @@ C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
 C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Views\AdminApplicationUsers\Index.g.cshtml.cs
+C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Pages\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Views\Catalogue\Create.g.cshtml.cs
+C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Views\Catalogue\Delete.g.cshtml.cs
+C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Views\Catalogue\Details.g.cshtml.cs
+C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Views\Catalogue\Edit.g.cshtml.cs
+C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\Razor\Views\Catalogue\Index.g.cshtml.cs
+C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\obj\Debug\netcoreapp2.1\ASP_Souvenirs.csprojAssemblyReference.cache

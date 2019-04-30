@@ -9,12 +9,18 @@ namespace ASP_Souvenirs.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>
     {
+        //public ApplicationDbContext()
+        //{
+        //}
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
         }
 
         public DbSet<ApplicationUser> ApplicationUser { get; set; }
+        public DbSet<ApplicationRole> ApplicationRoles { get; set; }
+
         //public DbSet<ShoppingCart> ShoppingCart { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Souvenir> Sourvenirs { get; set; }

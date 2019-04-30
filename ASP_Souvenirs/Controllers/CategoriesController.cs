@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ASP_Souvenirs.Data;
 using ASP_Souvenirs.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ASP_Souvenirs.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class CategoriesController : Controller
     {
         private readonly ApplicationDbContext _context;

@@ -9,6 +9,8 @@ namespace ASP_Souvenirs.Models
 {
     public class ApplicationUser : IdentityUser
     {
+        public ApplicationUser() : base() { }
+
         public bool Enabled { get; set; }
 
         public string Address { get; set; }
