@@ -46,7 +46,8 @@
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.PathOfFile)
+                @*@Html.DisplayFor(modelItem => item.PathOfFile)*@
+                <img class="img-responsive" style="max-width: 150px;" src="@Url.Content("~/images/items/" + @item.PathOfFile)" alt="">
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Supplier.EmailAddress)

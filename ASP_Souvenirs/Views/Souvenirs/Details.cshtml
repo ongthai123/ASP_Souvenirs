@@ -32,7 +32,8 @@
             @Html.DisplayNameFor(model => model.PathOfFile)
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.PathOfFile)
+            @*@Html.DisplayFor(model => model.PathOfFile)*@
+            <img class="img-responsive" style="max-width: 150px;" src="@Url.Content("~/images/items/" + Model.PathOfFile)" alt="">
         </dd>
         <dt>
             @Html.DisplayNameFor(model => model.Supplier)

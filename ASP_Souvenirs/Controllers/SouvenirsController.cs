@@ -8,6 +8,9 @@ using Microsoft.EntityFrameworkCore;
 using ASP_Souvenirs.Data;
 using ASP_Souvenirs.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using System.IO;
 
 namespace ASP_Souvenirs.Controllers
 {
@@ -15,10 +18,12 @@ namespace ASP_Souvenirs.Controllers
     public class SouvenirsController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public SouvenirsController(ApplicationDbContext context)
+        public SouvenirsController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: Souvenirs
@@ -61,10 +66,22 @@ namespace ASP_Souvenirs.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("SouvenirID,Name,Description,Price,PathOfFile,CategoryID,SupplierID")] Souvenir souvenir)
+        public async Task<IActionResult> Create([Bind("SouvenirID,Name,Description,Price,CategoryID,SupplierID")] Souvenir souvenir, IFormFile uploadFile)
         {
             if (ModelState.IsValid)
             {
+                var userId = _userManager.GetUserId(User);
+
+                if (uploadFile != null && uploadFile.Length > 0)
+                {
+                    var fileName = Path.GetFileName(uploadFile.FileName);
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\items", fileName);
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await uploadFile.CopyToAsync(fileStream);
+                    }
+                    souvenir.PathOfFile = fileName;
+                }
                 _context.Add(souvenir);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -97,7 +114,7 @@ namespace ASP_Souvenirs.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("SouvenirID,Name,Description,Price,PathOfFile,CategoryID,SupplierID")] Souvenir souvenir)
+        public async Task<IActionResult> Edit(int id, [Bind("SouvenirID,Name,Description,Price,CategoryID,SupplierID")] Souvenir souvenir, IFormFile uploadFile)
         {
             if (id != souvenir.SouvenirID)
             {
@@ -108,6 +125,17 @@ namespace ASP_Souvenirs.Controllers
             {
                 try
                 {
+                    if (uploadFile != null && uploadFile.Length > 0)
+                    {
+                        var fileName = Path.GetFileName(uploadFile.FileName);
+                        var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\items", fileName);
+                        using (var fileStream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await uploadFile.CopyToAsync(fileStream);
+                        }
+                        souvenir.PathOfFile = fileName;
+                    }
+
                     _context.Update(souvenir);
                     await _context.SaveChangesAsync();
                 }
