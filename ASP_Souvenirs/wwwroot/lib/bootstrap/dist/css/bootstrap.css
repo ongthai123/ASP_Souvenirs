@@ -27,6 +27,17 @@ section,
 summary {
   display: block;
 }
+
+/*My CSS line start*/
+.copyright {
+    float: left;
+}
+.contacts {
+}
+.social {
+    float: right;
+}
+/*My CSS line end*/
 audio,
 canvas,
 progress,
@@ -1085,7 +1096,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #333;
+  color: #000000;
   background-color: #fff;
 }
 input,
@@ -1097,7 +1108,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: #a94442;
   text-decoration: none;
 }
 a:hover,
@@ -1957,12 +1968,16 @@ pre code {
   .col-md-6 {
     width: 50%;
   }
-  .col-md-5 {
-    width: 41.66666667%;
-  }
-  .col-md-4 {
-    width: 33.33333333%;
-  }
+    .col-md-5 {
+        width: 41.66666667%;
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
+    .col-md-4 {
+        width: 33.33333333%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
   .col-md-3 {
     width: 25%;
   }

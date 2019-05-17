@@ -114,12 +114,14 @@ namespace ASP_Souvenirs.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("SouvenirID,Name,Description,Price,CategoryID,SupplierID")] Souvenir souvenir, IFormFile uploadFile)
+        public async Task<IActionResult> Edit(int id, [Bind("SouvenirID,Name,Description,Price,PathOfFile,CategoryID,SupplierID")] Souvenir souvenir, IFormFile uploadFile)
         {
             if (id != souvenir.SouvenirID)
             {
                 return NotFound();
             }
+
+            var file = "";
 
             if (ModelState.IsValid)
             {
@@ -135,6 +137,11 @@ namespace ASP_Souvenirs.Controllers
                         }
                         souvenir.PathOfFile = fileName;
                     }
+                    else
+                    {
+                        file = souvenir.PathOfFile;
+                    }
+                    souvenir.PathOfFile = file;
 
                     _context.Update(souvenir);
                     await _context.SaveChangesAsync();

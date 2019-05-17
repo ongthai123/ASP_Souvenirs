@@ -122,11 +122,11 @@ namespace ASP_Souvenirs.Migrations
 
                     b.Property<int>("ItemCount");
 
-                    b.Property<int?>("SourvenirSouvenirID");
+                    b.Property<int?>("SouvenirID");
 
                     b.HasKey("CartItemID");
 
-                    b.HasIndex("SourvenirSouvenirID");
+                    b.HasIndex("SouvenirID");
 
                     b.ToTable("CartItem");
                 });
@@ -192,6 +192,16 @@ namespace ASP_Souvenirs.Migrations
                     b.HasIndex("SourvenirSouvenirID");
 
                     b.ToTable("OrderItem");
+                });
+
+            modelBuilder.Entity("ASP_Souvenirs.Models.ShoppingCart", b =>
+                {
+                    b.Property<string>("ShoppingCartID")
+                        .ValueGeneratedOnAdd();
+
+                    b.HasKey("ShoppingCartID");
+
+                    b.ToTable("ShoppingCart");
                 });
 
             modelBuilder.Entity("ASP_Souvenirs.Models.Souvenir", b =>
@@ -342,9 +352,9 @@ namespace ASP_Souvenirs.Migrations
 
             modelBuilder.Entity("ASP_Souvenirs.Models.CartItem", b =>
                 {
-                    b.HasOne("ASP_Souvenirs.Models.Souvenir", "Sourvenir")
+                    b.HasOne("ASP_Souvenirs.Models.Souvenir", "Souvenir")
                         .WithMany("CartItems")
-                        .HasForeignKey("SourvenirSouvenirID");
+                        .HasForeignKey("SouvenirID");
                 });
 
             modelBuilder.Entity("ASP_Souvenirs.Models.Order", b =>

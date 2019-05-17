@@ -11,6 +11,6 @@ namespace ASP_Souvenirs.Models
         public string CartID { get; set; }
         public int ItemCount { get; set; }
 
-        public Souvenir Sourvenir { get; set; }
+        public Souvenir Souvenir { get; set; }
     }
 }

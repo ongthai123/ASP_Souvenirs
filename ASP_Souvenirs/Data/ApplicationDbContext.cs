@@ -21,7 +21,7 @@ namespace ASP_Souvenirs.Data
         public DbSet<ApplicationUser> ApplicationUser { get; set; }
         public DbSet<ApplicationRole> ApplicationRoles { get; set; }
 
-        //public DbSet<ShoppingCart> ShoppingCart { get; set; }
+        public DbSet<ShoppingCart> ShoppingCart { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Souvenir> Sourvenirs { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
