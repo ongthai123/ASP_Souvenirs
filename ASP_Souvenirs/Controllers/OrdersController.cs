@@ -30,7 +30,7 @@ namespace ASP_Souvenirs.Controllers
         public async Task<IActionResult> Index()
         {
             //return View(await _context.Orders.ToListAsync());
-            return View(await _context.Orders.Include(i => i.User).AsNoTracking().ToListAsync());
+            return View(await _context.Orders.Include(i => i.User).OrderByDescending(i => i.OrderID).AsNoTracking().ToListAsync());
         }
 
         // GET: Orders/Details/5
@@ -195,7 +195,7 @@ namespace ASP_Souvenirs.Controllers
         public async Task<IActionResult> CustomerIndex()
         {
             ApplicationUser user = await _userManager.GetUserAsync(User);
-            return View(await _context.Orders.Where(o => o.User == user).Include(o => o.User).AsNoTracking().ToListAsync());
+            return View(await _context.Orders.Where(o => o.User == user).Include(o => o.User).OrderByDescending(o => o.OrderID).AsNoTracking().ToListAsync());
         }
 
         // GET: Orders/Details/5

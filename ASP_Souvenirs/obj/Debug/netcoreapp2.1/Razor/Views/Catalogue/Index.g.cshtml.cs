@@ -74,7 +74,7 @@ using ASP_Souvenirs.Models;
             WriteLiteral("\r\n<h2>Souvenirs</h2>\r\n<div class=\"col-md-offset-3 col-md-9\" style=\"text-align:right\">\r\n    ");
             EndContext();
             BeginContext(185, 472, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18826b7578c742318ea483fee189be29", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d3d7cb39fdb94451a4feb0145f79421d", async() => {
                 BeginContext(223, 166, true);
                 WriteLiteral("\r\n        <div class=\"form-actions no-color\">\r\n            <p>\r\n                <input type=\"text\" style=\"width:200px;\" name=\"SearchString\" placeholder=\"Find by name\"");
                 EndContext();
@@ -89,7 +89,7 @@ WriteAttributeValue("", 397, ViewData["currentFilter"], 397, 26, false);
                 WriteLiteral(" />\r\n                <input type=\"submit\" value=\"Search\" class=\"btn btn-default\" /> |\r\n                ");
                 EndContext();
                 BeginContext(527, 83, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9abb106e38c04834b9322e608bf4be5e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "99d5230ac7aa49a48a4e2b0e99f04806", async() => {
                     BeginContext(589, 17, true);
                     WriteLiteral("Back to Full List");
                     EndContext();
@@ -139,7 +139,7 @@ WriteAttributeValue("", 397, ViewData["currentFilter"], 397, 26, false);
             WriteLiteral("\r\n</div>\r\n<div class=\"col-md-3\">\r\n    <div class=\"list-group\" id=\"categories\">\r\n        ");
             EndContext();
             BeginContext(745, 80, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d017ecd588ea409e8e7e27d7031ebca7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "91660497282747b9bd65da5c52fcd64b", async() => {
                 BeginContext(807, 14, true);
                 WriteLiteral("All Categories");
                 EndContext();
@@ -179,7 +179,7 @@ WriteAttributeValue("", 397, ViewData["currentFilter"], 397, 26, false);
             WriteLiteral("                ");
             EndContext();
             BeginContext(1002, 100, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d486ee4c3b3c454fb013a04503642351", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e7f20cbf8f6e441c844fa9d6cb8fa2d2", async() => {
                 BeginContext(1085, 13, false);
 #line 26 "C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\Views\Catalogue\Index.cshtml"
                                                                                              Write(category.Name);
@@ -242,7 +242,7 @@ WriteAttributeValue("", 397, ViewData["currentFilter"], 397, 26, false);
                     ");
             EndContext();
             BeginContext(1500, 271, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a0344688f6164966acf03483be15a347", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c03fd0da84264a91bde524290d095555", async() => {
                 BeginContext(1574, 97, true);
                 WriteLiteral("\r\n                        <img class=\"img-responsive\" style=\"max-width: 154px; max-height:180px;\"");
                 EndContext();
@@ -288,7 +288,7 @@ WriteAttributeValue("", 1677, Url.Content("~/images/items/" + @item.PathOfFile),
             WriteLiteral("\r\n                </div>\r\n            </div>\r\n            <div class=\"mid-1\" style=\"padding-left: 10px;\">\r\n                <div>\r\n                    <h5>");
             EndContext();
             BeginContext(1925, 100, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "987da29687e647cca9d9739a97cc2de8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb3392535bc64d6c84bbe6840a60cf1a", async() => {
                 BeginContext(1982, 39, false);
 #line 47 "C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\Views\Catalogue\Index.cshtml"
                                                                            Write(Html.DisplayFor(modelItem => item.Name));
@@ -347,7 +347,7 @@ WriteAttributeValue("", 1677, Url.Content("~/images/items/" + @item.PathOfFile),
             WriteLiteral("</h4>\r\n                </div>\r\n                <div>\r\n                    ");
             EndContext();
             BeginContext(2261, 134, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "443f19bf8ec542bf84584f8bb3ac4823", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ca84df0667b74f02aede23e3d1ad6b7f", async() => {
                 BeginContext(2380, 11, true);
                 WriteLiteral("Add to Cart");
                 EndContext();
