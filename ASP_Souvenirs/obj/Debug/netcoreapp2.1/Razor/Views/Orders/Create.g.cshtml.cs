@@ -77,7 +77,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("<h2>Create Order</h2>\r\n<h3><span class=\"fa fa-exclamation-sign\"></span>Please confirm your order details.</h3>\r\n\r\n");
             EndContext();
             BeginContext(397, 2032, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3f2db2a538d64af286dfd3b16a32c39b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fc9856de6a9e400185f027cd621bdfe7", async() => {
                 BeginContext(423, 200, true);
                 WriteLiteral("\r\n    <div class=\"form-horizontal\">\r\n        <hr />\r\n        <div>\r\n\r\n            <label for=\"\"></label>\r\n            <dl class=\"dl-horizontal\">\r\n                <dt>Date</dt>\r\n                <dd><p>");
                 EndContext();

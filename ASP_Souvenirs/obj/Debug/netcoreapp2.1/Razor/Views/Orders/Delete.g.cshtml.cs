@@ -355,12 +355,12 @@ using ASP_Souvenirs.Models;
             WriteLiteral("\r\n            </td>\r\n        </tr>\r\n    </table>\r\n\r\n    ");
             EndContext();
             BeginContext(3034, 254, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7f7111bfc85943df9baacbd0617b04d7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9388a6fdc57b4944a541fc089a90f2a6", async() => {
                 BeginContext(3060, 137, true);
                 WriteLiteral("\r\n        <div class=\"form-actions no-color\">\r\n            <input type=\"submit\" value=\"Delete\" class=\"btn btn-default\" /> |\r\n            ");
                 EndContext();
                 BeginContext(3197, 62, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c0a725d8fa9e45c4a676cf57395baf3b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f0f4a64fcc0f4b0b858a2df85b9c00cf", async() => {
                     BeginContext(3243, 12, true);
                     WriteLiteral("Back to List");
                     EndContext();

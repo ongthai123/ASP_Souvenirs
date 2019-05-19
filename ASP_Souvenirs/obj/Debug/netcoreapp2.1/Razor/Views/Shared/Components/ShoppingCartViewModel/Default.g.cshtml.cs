@@ -107,7 +107,7 @@ using ASP_Souvenirs.Models;
             WriteLiteral("                <tr>\r\n                    <td>");
             EndContext();
             BeginContext(1010, 142, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76e23b2e13b64053b767b69aa767bc42", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9940a6fe86bc4f7788385cb0ee54b297", async() => {
                 BeginContext(1103, 24, false);
 #line 34 "C:\Users\Thai\Desktop\ASP_Souvenirs\ASP_Souvenirs\Views\Shared\Components\ShoppingCartViewModel\Default.cshtml"
                                                                                                                Write(item.Souvenir.SouvenirID);
@@ -188,7 +188,7 @@ using ASP_Souvenirs.Models;
             WriteLiteral("         ");
             EndContext();
             BeginContext(1319, 139, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2e86d356afa446ea802e16a1029ccdc3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ac059e5858154443a057d1ea7427e6ed", async() => {
                 BeginContext(1421, 33, true);
                 WriteLiteral("<span class=\"fa fa-trash\"></span>");
                 EndContext();
@@ -273,7 +273,7 @@ using ASP_Souvenirs.Models;
             WriteLiteral("</b></td>\r\n            </tr>\r\n        </table>\r\n        <div class=\"row\">\r\n            <div class=\"col-md-offset-7\">\r\n                ");
             EndContext();
             BeginContext(2286, 188, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e57f0d6bc03403093f214c1d4bb0440", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8961d22fa21d4671a001996d4710f8a8", async() => {
                 BeginContext(2386, 84, true);
                 WriteLiteral("\r\n                    Clear Cart <span class=\"fa fa-trash\"></span>\r\n                ");
                 EndContext();
@@ -299,7 +299,7 @@ using ASP_Souvenirs.Models;
             WriteLiteral("\r\n                \r\n                ");
             EndContext();
             BeginContext(2510, 202, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c865badda2c947c8901540bfe2945a13", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bf7c5fbf4c984e03a7b21d0f67115567", async() => {
                 BeginContext(2602, 106, true);
                 WriteLiteral("\r\n                    Checkout&nbsp;<i class=\"fa fa-credit-card\" aria-hidden=\"true\"></i>\r\n                ");
                 EndContext();

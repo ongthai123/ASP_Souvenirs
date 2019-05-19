@@ -141,10 +141,18 @@ namespace ASP_Souvenirs.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var supplier = await _context.Suppliers.FindAsync(id);
-            _context.Suppliers.Remove(supplier);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            try
+            {
+                var supplier = await _context.Suppliers.SingleOrDefaultAsync(m => m.SupplierID == id);
+                _context.Suppliers.Remove(supplier);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index");
+            }
+            catch (DbUpdateException)
+            {
+                TempData["SupplierUsed"] = "The Supplier being deleted is supplying bags. Delete those bags before trying again.";
+                return RedirectToAction("Delete");
+            }
         }
 
         private bool SupplierExists(int id)

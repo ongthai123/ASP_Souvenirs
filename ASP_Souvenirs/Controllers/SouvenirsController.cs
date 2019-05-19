@@ -189,10 +189,18 @@ namespace ASP_Souvenirs.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var souvenir = await _context.Sourvenirs.FindAsync(id);
+            var souvenir = await _context.Sourvenirs.SingleOrDefaultAsync(m => m.SouvenirID == id);
             _context.Sourvenirs.Remove(souvenir);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateException)
+            {
+                TempData["BagUsed"] = "The bag being deleted has been used in previous orders. Delete those orders before trying again.";
+                return RedirectToAction("Delete");
+            }
+            return RedirectToAction("Index");
         }
 
         private bool SouvenirExists(int id)
