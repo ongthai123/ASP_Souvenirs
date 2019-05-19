@@ -13,6 +13,7 @@
             <li>
                 <button type="submit" class="btn btn-link navbar-btn navbar-link">Logout</button>
             </li>
+            <li>@await Component.InvokeAsync("ShoppingCartViewModel")</li>
         </ul>
     </form>
 }
@@ -21,5 +22,6 @@ else
     <ul class="nav navbar-nav navbar-right">
         <li><a asp-area="Identity" asp-page="/Account/Register">Register</a></li>
         <li><a asp-area="Identity" asp-page="/Account/Login">Login</a></li>
+        <li>@await Component.InvokeAsync("ShoppingCartViewModel")</li>
     </ul>
 }

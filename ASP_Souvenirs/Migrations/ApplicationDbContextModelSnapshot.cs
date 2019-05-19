@@ -368,7 +368,8 @@ namespace ASP_Souvenirs.Migrations
                 {
                     b.HasOne("ASP_Souvenirs.Models.Order", "Order")
                         .WithMany("OrderItems")
-                        .HasForeignKey("OrderID");
+                        .HasForeignKey("OrderID")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("ASP_Souvenirs.Models.Souvenir", "Sourvenir")
                         .WithMany("OrderLines")

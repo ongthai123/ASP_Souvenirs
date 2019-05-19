@@ -21,12 +21,12 @@ namespace ASP_Souvenirs.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
-        {
-            var cart = ShoppingCart.GetCart(this.HttpContext);
-            // Return the view
-            return View(cart);
-        }
+        //public IActionResult Index()
+        //{
+        //    var cart = ShoppingCart.GetCart(this.HttpContext);
+        //    // Return the view
+        //    return View(cart);
+        //}
 
         // GET: /Store/AddToCart/5
         public ActionResult AddToCart(int id)
